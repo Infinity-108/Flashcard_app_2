@@ -4,13 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/question_textview"
+        android:background="@drawable/question_background"
         android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
         android:layout_height="200dp"
-        android:text="Why is Ugonna an amazing Human Being?"
+        android:text="What age can you get your Driver's Licence in USA?"
         android:textSize="40sp"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
@@ -44,11 +52,79 @@
         android:id="@+id/add_button"
         android:layout_width="80dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/plus_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/edit_button"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/answer1_textview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/question_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:text="16 Years"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/answer2_textview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/answer1_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:text="5 Years"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/answer3_textview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/answer2_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:text="14 Years"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:paddingTop="5dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
