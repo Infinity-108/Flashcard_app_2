@@ -6,7 +6,7 @@ This is a Flashcard app that allows users to both create a flashcard with option
 
 ### App Walk-though
 
-<img src="https://github.com/Infinity-108/Flashcard_app_2/blob/main/lab_02_.gif" width=200><br>
+<img src="https://github.com/Infinity-108/Flashcard_app_2/blob/main/lab_02.gif" width=200><br>
 
 
 ## Required
